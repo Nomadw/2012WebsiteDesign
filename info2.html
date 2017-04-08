@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>Bourne Computing Systems - Info</title>
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+	
+<link type='text/css' rel='stylesheet' href='style.css' />
+<script type='text/javascript'>
+	
+	$(document).ready( function() {
+	
+	
+		$('ul#menu li#item2').click(function() {	//opens and closes sub-menu
+			$('div#submenu').fadeToggle("fast");
+		});
+		$('ul#menu li#item1').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item1').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item1').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item2').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+	});
+</script> 
+</head>
+<body>
+	<div id=banner>
+		<img src="image/logo1.gif" alt="banner" height=100px width=100px left=50px></img>
+	</div>
+		<div id=content>
+	Web architecture roles<br>
+	<table border=1>
+			<tr>
+				<td>
+					<u>Architecture</u>
+				</td>
+				<td>
+					<u>Description</u>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					TCP/IP
+				</td>
+				<td>
+					Describes a set of guidelines for protocols to allow computers to communicate over a network.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					DNS servers
+				</td>
+				<td>
+					Provides an address for web servers that can be better understood by humans
+				</td>
+			</tr>
+			<tr>
+				<td>
+					HTTP Requests
+				</td>
+				<td>
+					Different methods indication the required action to be performed on a resource.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					SSL
+				</td>
+				<td>
+					Allows for secure transfer of data through cross-encryption.
+				</td>
+			</tr>
+		</table>
+</div>
+	<div id=menu>
+		MENU<br>
+		<ul id=menu>
+			<li id='item1'><a href="index.html">Home</a></li>
+			<li id='item2'>Info</li>
+			<li id='item1'><a href="about.html">About</a></li>
+			<li id='item1'><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div id=submenu>
+	<h2><u>Info sub-menu:</u></h2>
+	<ul>
+		<li><a href="info1.html">Web architecture order</a></li>
+		<li>Web architecture roles</li>
+		<li><a href="info3.html">Performance issues</a></li>
+		<li><a href="info4.html">Security issues and measures</a></li>
+		<li><a href="info5.html">The TCP/IP protocol and layer protocols</a></li>
+	</ul>
+	</div>
+</body>
+</html>

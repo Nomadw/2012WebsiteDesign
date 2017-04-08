@@ -1,0 +1,147 @@
+<html>
+<head>
+	<title>Bourne Computing Systems - Info</title>
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+	
+<link type='text/css' rel='stylesheet' href='style.css' />
+<script type='text/javascript'>
+	
+	$(document).ready( function() {
+	
+	
+		$('ul#menu li#item2').click(function() {	//opens and closes sub-menu
+			$('div#submenu').fadeToggle("fast");
+		});
+		$('ul#menu li#item1').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item1').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item1').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item2').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+	});
+</script> 
+</head>
+<body>
+	<div id=banner>
+		<img src="image/logo1.gif" alt="banner" height=100px width=100px left=50px></img>
+	</div>
+		<div id=content>
+	Performance Issues<br>
+		<p>Typically, for a high-traffic server you will need a server with large RAM capacity, and<br>
+		multiple, faster processors. This allows for more requests to be dealt with at once by the<br>
+		processors, and more requests to be held by the RAM to feed into the processors. (Typical server<br>
+		motherboards and cases allow for more than one processor to be fitted).<br>
+		High bandwidth is also required, as this allows larger amounts data to be sent and received at<br>
+		higher speeds, increasing performance.<br>
+		Lastly, you will need to consider what files are used on your webpages. Using large BMP files for images<br>
+		and having MP3 music in the background takes up a lot of bandwidth to transfer these files to a home user's<br>
+		computer, and their computer's performance can also suffer from this. Using smaller image formats, such as<br>
+		GIF and JPG, are far better for speed and performance as they are far smaller files, and not using sound or<br>
+		music files at all on pages is also reccomended, as generally these are not needed, are large files and<br>
+		are just a nuisance to the user.<br></p>
+		
+		<br>
+		<table border=1>
+			<tr>
+				<td>
+					<u>Limitation</u>
+				</td>
+				<td>
+					<u>Description</u>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Client's connection speed
+				</td>
+				<td>
+					This will affect performance as the ISP will only allow a certain speed based on what package the client is paying for.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Server Traffic
+				</td>
+				<td>
+					If many clients are connected to a server at once, the server may not be able to keep up with requests.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Client's Computer performance
+				</td>
+				<td>
+					A client with a less powerful machine may not be able to view pages as fast, this is usually based on processor speed and the amount of cache memory.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Interference
+				</td>
+				<td>
+					A client on a wireless network may experience interference between the wireless card and the router, affecting performance.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Server's computer performance
+				</td>
+				<td>
+					Smaller businesses may have less powerful servers, meaning that less requests can be performed at a time.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Content of page
+				</td>
+				<td>
+					Webpages with more demanding content, such as videos and larger graphics, will require more bandwidth to effectivley view, affecting performance.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Client's browser settings
+				</td>
+				<td>
+					Clients using older browsers may experience compatibility issues with more modern webpages, and some script-blocking settings may block some important scripts in a webpage.
+				</td>
+			</tr>
+		</table>
+</div>
+	<div id=menu>
+		MENU<br>
+		<ul id=menu>
+			<li id='item1'><a href="index.html">Home</a></li>
+			<li id='item2'>Info</li>
+			<li id='item1'><a href="about.html">About</a></li>
+			<li id='item1'><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div id=submenu>
+	<h2><u>Info sub-menu:</u></h2>
+	<ul>
+		<li><a href="info1.html">Web architecture order</a></li>
+		<li><a href="info2.html">Web architecture roles</a></li>
+		<li>Performance issues</li>
+		<li><a href="info4.html">Security issues and measures</a></li>
+		<li><a href="info5.html">The TCP/IP protocol and layer protocols</a></li>
+	</ul>
+	</div>
+</body>
+</html>

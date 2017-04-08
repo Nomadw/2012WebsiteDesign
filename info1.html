@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title>Bourne Computing Systems - Info</title>
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+	
+<link type='text/css' rel='stylesheet' href='style.css' />
+<script type='text/javascript'>
+	
+	$(document).ready( function() {
+	
+	
+		$('ul#menu li#item2').click(function() {	//opens and closes sub-menu
+			$('div#submenu').fadeToggle("fast");
+		});
+		$('ul#menu li#item1').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item1').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item1').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item2').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+	});
+</script> 
+</head>
+<body>
+	<div id=banner>
+		<img src="image/logo1.gif" alt="banner" height=100px width=100px left=50px></img>
+	</div>
+		<div id=content>
+	Web architecture order<br>
+		<table border=1>
+			<tr>
+				<td>
+					<u>Stage</u>
+				</td>
+				<td>
+					<u>Description</u>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Internet Service Providers (ISPs)
+				</td>
+				<td>
+					The company which provides your internet service. Different ISPs offer simple access to the internet, provide server hosting, etc.</font>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Domain Names
+				</td>
+				<td>
+					This is the address for where your data is sent to.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Software
+				</td>
+				<td>
+					Code written to instruct the hardware in the computer to perform tasks
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Web Servers
+				</td>
+				<td>
+					Large computers that are designed to take massive amounts of data at once due to heavy use. These generally require more memory instead of faster processors.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Routers/Firewalls
+				</td>
+				<td>
+					Hardware and software designed to allow and disallow connections throughout a network
+				</td>
+			</tr>
+		</table>
+</div>
+	<div id=menu>
+		MENU<br>
+		<ul id=menu>
+			<li id='item1'><a href="index.html">Home</a></li>
+			<li id='item2'>Info</li>
+			<li id='item1'><a href="about.html">About</a></li>
+			<li id='item1'><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div id=submenu>
+	<h2><u>Info sub-menu:</u></h2>
+	<ul>
+		<li>Web architecture order</li>
+		<li><a href="info2.html">Web architecture roles</a></li>
+		<li><a href="info3.html">Performance issues</a></li>
+		<li><a href="info4.html">Security issues and measures</a></li>
+		<li><a href="info5.html">The TCP/IP protocol and layer protocols</a></li>
+	</ul>
+	</div>
+</body>
+</html>

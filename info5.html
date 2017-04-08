@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title>Bourne Computing Systems - Info</title>
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+	
+<link type='text/css' rel='stylesheet' href='style.css' />
+<script type='text/javascript'>
+	
+	$(document).ready( function() {
+	
+	
+		$('ul#menu li#item2').click(function() {	//opens and closes sub-menu
+			$('div#submenu').fadeToggle("fast");
+		});
+		$('ul#menu li#item1').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item1').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item1').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item2').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+	});
+</script> 
+</head>
+<body>
+	<div id=banner>
+		<img src="image/logo1.gif" alt="banner" height=100px width=100px left=50px></img>
+	</div>
+		<div id=content>
+	The TCP/IP Protocol and layer protocols<br>
+		<p>The TCP/IP model, sometimes known as the internet model, is a framework developed in the 1970s by DARPA, part of the United States defense department, , to descrive the framework of all protocols to allow computers to communicate over a network.</p>
+<br>
+		<table border=1>
+			<tr>
+				<td>
+					<u>Protocol</u>
+				</td>
+				<td>
+					<u>Description</u>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					File Transfer Protocol (FTP)
+				</td>
+				<td>
+					Used to transfer files over a TCP-based network, such as the internet.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Secure Mail Transfer Protocol (SMTP)
+				</td>
+				<td>
+					Internet standard for transfering E-Mail across IP networks.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Hypertext Transfer Protocol (HTTP)
+				</td>
+				<td>
+					Networking protocol for connected hypermedia data systems. The foundations of data communcation throughout the World Wide Web.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Hypertext Transfer Protocol Secure (HTTPS)
+				</td>
+				<td>
+					Combination of HTTP and SSL/TLS to provide encrypted communication.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Dynamic Name System (DNS)
+				</td>
+				<td>
+					Provides a gateway to a dynamically changing IP.
+				</td>
+			</tr>
+		</table>
+</div>
+	<div id=menu>
+		MENU<br>
+		<ul id=menu>
+			<li id='item1'><a href="index.html">Home</a></li>
+			<li id='item2'>Info</li>
+			<li id='item1'><a href="about.html">About</a></li>
+			<li id='item1'><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div id=submenu>
+	<h2><u>Info sub-menu:</u></h2>
+	<ul>
+		<li><a href="info1.html">Web architecture order</a></li>
+		<li><a href="info2.html">Web architecture roles</a></li>
+		<li><a href="info3.html">Performance issues</a></li>
+		<li><a href="info4.html">Security issues and measures</a></li>
+		<li>The TCP/IP protocol and layer protocols</li>
+	</ul>
+	</div>
+</body>
+</html>

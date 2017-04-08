@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title>Bourne Computing Systems - Contact</title>
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD6ao7E4xzLSHGNJfiapvhM50TBDEzeQwc&sensor=false"></script>
+<script type="text/javascript">      
+function initialize() {
+var myLatlng = new google.maps.LatLng(50.724709, -1.961881);
+
+var myOptions = {
+      zoom: 16,  
+      center: myLatlng,  
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+ var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+ 
+var marker = new google.maps.Marker({
+        position: myLatlng, 
+        map: map,
+		title:"Bourne Computing Solutions"
+    });
+	
+	var contentString = '<b><center> Bourne Computing Solutions<br></b> North Road <br> Poole <br> Dorset <br> BH14 0LS </center>'; 
+	
+	var infowindow = new 
+	google.maps.InfoWindow({
+	     content: contentString, 
+		 position: myLatlng }); 
+		 
+infowindow.open(map);
+
+}
+	
+	$(document).ready( function() {
+	
+	
+		$('ul#menu li#item2').click(function() {	//opens and closes sub-menu
+			$('div#submenu').fadeToggle("fast");
+		});
+		$('ul#menu li#item1').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item1').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item1').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item2').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+	});
+</script> 
+<!-- loads CSS from seperate stylesheet-->
+<link type='text/css' rel='stylesheet' href='style.css' />
+</head>
+<body onload="initialize()">
+	
+	<div id=banner>
+		<img src="image/logo1.gif" alt="banner" height=100px width=100px left=50px></img>
+	</div>
+		<div id=content>
+		Contact<br>
+		<div id="map_canvas">
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<form name="input" action="html_form_action.asp" method="get">
+First name: <input type="text" name="firstname"/><br>
+Last name: <input type="text" name="lastname"/><br>
+E-Mail: <input type="text" name="email"/><br>
+Telephone: <input type="text" name="phone"/><br>
+<input type="submit" value="Submit"/>
+</form> 
+</div>
+	<div id=menu>
+		MENU<br>
+		<ul id=menu>
+			<li id='item1'><a href="index.html">Home</a></li>
+			<li id='item2'>Info</li>
+			<li id='item1'><a href="about.html">About</a></li>
+			<li id='item3'>Contact</li>
+		</ul>
+	</div>
+	<div id=submenu>
+	<h2><u>Info sub-menu:</u></h2>
+	<ul>
+		<li><a href="info1.html">Web architecture order</a></li>
+		<li><a href="info2.html">Web architecture roles</a></li>
+		<li><a href="info3.html">Performance issues</a></li>
+		<li><a href="info4.html">Security issues and measures</a></li>
+		<li><a href="info5.html">The TCP/IP protocol and layer protocols</a></li>
+	</ul>
+	</div>
+</body>
+</html>

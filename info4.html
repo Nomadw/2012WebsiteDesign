@@ -1,0 +1,143 @@
+<html>
+<head>
+	<title>Bourne Computing Systems - Info</title>
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+	
+<link type='text/css' rel='stylesheet' href='style.css' />
+<script type='text/javascript'>
+	
+	$(document).ready( function() {
+	
+	
+		$('ul#menu li#item2').click(function() {	//opens and closes sub-menu
+			$('div#submenu').fadeToggle("fast");
+		});
+		$('ul#menu li#item1').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').hover(function() {
+			$(this).css("background-image", "url(image/buttonhover.gif)");
+		},function(){
+			$(this).css("background-image","url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item1').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item1').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+		$('ul#menu li#item2').mousedown(function() {
+			$(this).css("background-image", "url(image/buttonpressed.gif)");
+		});
+		$('ul#menu li#item2').mouseup(function() {
+			$(this).css("background-image", "url(image/buttonnormal.gif)");
+		});
+	});
+</script> 
+</head>
+<body>
+	<div id=banner>
+		<img src="image/logo1.gif" alt="banner" height=100px width=100px left=50px></img>
+	</div>
+		<div id=content>
+	Security Issues and Measures<br>
+		<p>Amazon must hold customer's data under the Data Protection Act. This means that:<br>
+		-All data must be processed fairly and lawfully.<br>
+		-Data must only be obtained for specified lawful purposes, and not used for other reasons.<br>
+		-Data kept must be adequate, relevant and not excessive.<br>
+		-Data must be kept accurate and up-to-date.<br>
+		-Data cannot be held for longer than necessary for the purpose.<br>
+		-Data must be processed within the rights of the data subject under this act.<br>
+		-The data held must be kept secure from other sources attempting to obtain the data.<br>
+		-The data cannot be transferred to country or territory where adequate data protection laws<br>
+		 are not present.</p><br>
+		<table border=1>
+			<tr>
+				<td>
+					<u>Security measure</u>
+				</td>
+				<td>
+					<u>Description</u>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					CAPTCHA
+				</td>
+				<td>
+					Provides a visualisation of one or two words which you need to re-enter into a box. Prevents bots from registering and posting. Main security measure on anonymous posting boards such as 4chan.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					SSL Encryption
+				</td>
+				<td>
+					Encrypts information to send to a server. The server then requests they key for the encryption, which is sent in an encryption that the server holds the key for.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Password strength testing
+				</td>
+				<td>
+					During registration a small program measures the strength of a password, which can help the client decide on how to build a stronger password to prevent hackers guessing the password.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					IP blocking
+				</td>
+				<td>
+					Blocks the IP of a user that may be trying to attack a server to prevent further attacks from them.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					File prevention
+				</td>
+				<td>
+					Only allows certain filetypes to be uploaded to a server, preventing users from uploading things such as scripts to access restricted parts of a server.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					IP logging
+				</td>
+				<td>
+					Keeps a log of which IP uploads and accesses content on the server, allowing attacking IPs to be found and blocked.
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Forgotten password systems
+				</td>
+				<td>
+					If a user forgets their password, this resets that users password and send the new password to their email account, to stop any user from being able to reset and log into anyone else's account.
+				</td>
+			</tr>
+		</table>
+</div>
+	<div id=menu>
+		MENU<br>
+		<ul id=menu>
+			<li id='item1'><a href="index.html">Home</a></li>
+			<li id='item2'>Info</li>
+			<li id='item1'><a href="about.html">About</a></li>
+			<li id='item1'><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div id=submenu>
+	<h2><u>Info sub-menu:</u></h2>
+	<ul>
+		<li><a href="info1.html">Web architecture order</a></li>
+		<li><a href="info2.html">Web architecture roles</a></li>
+		<li><a href="info3.html">Performance issues</a></li>
+		<li>Security issues and measures</li>
+		<li><a href="info5.html">The TCP/IP protocol and layer protocols</a></li>
+	</ul>
+	</div>
+</body>
+</html>
